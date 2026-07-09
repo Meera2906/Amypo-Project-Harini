@@ -28,7 +28,7 @@ public class DataSeeder implements CommandLineRunner {
     public void run(String... args) {
         if (userRepository.count() > 0) return;
 
-        SystemUser admin = userRepository.save(SystemUser.builder()
+        userRepository.save(SystemUser.builder()
                 .username("admin").password(passwordEncoder.encode("admin123"))
                 .email("admin@lastmile.com").role(UserRole.PLATFORM_ADMIN).build());
 
