@@ -1,9 +1,0 @@
-.shiny-text {
-  color: #94a3b8;
-  display: inline-block;
-  font-weight: 500;
-}
-
-.shiny-text.disabled {
-  animation: none;
-}
